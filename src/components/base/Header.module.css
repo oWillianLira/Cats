@@ -1,0 +1,41 @@
+.header {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+  background-color: #fff;
+}
+
+.logo {
+  padding: 0.5rem 0;
+}
+
+.logo svg {
+  width: 30px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+}
+
+.login {
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+}
+
+.login::after {
+  content: '';
+  display: inline-block;
+  width: 14px;
+  height: 17px;
+  background: url('../../Assets/usuario.svg');
+  margin-left: 0.5rem;
+  position: relative;
+  top: -1px;
+  fill: var(--text-color);
+}
