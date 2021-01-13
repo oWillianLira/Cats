@@ -1,10 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Header.module.css';
+import { userContext } from '../../userContext';
 
 import { ReactComponent as Cats } from '../../Assets/cat.svg';
 
 const Header = () => {
+  const context = React.useContext(userContext);
+
   return (
     <header className={styles.header}>
       <nav className={`${styles.nav} container`}>
@@ -12,7 +15,7 @@ const Header = () => {
           <Cats />
         </Link>
         <Link className={styles.login} to="/login">
-          Sign In / Sign Up
+          Log in | Sign up
         </Link>
       </nav>
     </header>

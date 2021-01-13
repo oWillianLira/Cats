@@ -1,0 +1,23 @@
+.button {
+  font-size: 1.2rem;
+  font-family: var(--text-ff1);
+  cursor: pointer;
+  border-radius: 0.4rem;
+  border: none;
+  background: #84a98c;
+  min-width: 7rem;
+  color: #2f3e46;
+  padding: 0.6rem 1rem;
+  transition: all 250ms;
+}
+
+.button:hover,
+.button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #cad2c5, 0 0 0 4px #84a98c;
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
